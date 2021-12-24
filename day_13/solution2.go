@@ -3,7 +3,6 @@ package main
 import (
 	_ "embed"
 	"fmt"
-	"os"
 	"regexp"
 	"strconv"
 	"strings"
@@ -96,9 +95,6 @@ func (s *Sheet) Print() {
 		}
 		fmt.Println()
 	}
-
-	os.Exit(0)
-
 }
 
 func (s *Sheet) Fold(f Fold) {
